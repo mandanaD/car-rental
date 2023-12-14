@@ -1,0 +1,161 @@
+.container {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 2rem;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home img {
+    width: 58%;
+    transform: rotateY(180deg);
+}
+#title{
+    color: #fd6b3f;
+}
+.home-top h1 {
+    font-size: clamp(1.5rem,4vw,3rem);
+    margin-bottom: 1rem;
+}
+
+.ios {
+    background: url("../../assets/ios.png") no-repeat;
+    background-size: 97%;
+    margin-right: 1rem;
+}
+
+.google {
+    background: url("../../assets/google.png") no-repeat;
+    background-size: 100%;
+}
+
+.get-app {
+    margin: 1.5rem 0;
+}
+
+.get-app div {
+    width: clamp(7rem,11vw,10rem);
+    aspect-ratio: 2/1;
+    display: inline-block;
+}
+
+.info{
+    background: white;
+    padding: 1rem 2rem;
+    width: 70%;
+    min-width: 17rem;
+    border-radius: 1rem;
+    box-shadow: #d6d6d6 0 0 10px;
+    margin-bottom: 4rem;
+}
+.info form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin:1rem 0 ;
+    gap: 1rem;
+}
+/*.info form >*{*/
+/*    flex-grow: 1;*/
+/*    flex-basis: 20%;*/
+/*}*/
+.inputBox div{
+    margin-bottom:7px ;
+}
+.inputBox input{
+    width: 12rem;
+    height: 2.5rem;
+    padding: 10px;
+    border: none;
+    background: #eceef0;
+    border-radius:5px ;
+}
+.inputBox input:focus{
+    outline: rgba(71, 79, 159, 0.65) 3px solid;
+}
+#form-btn{
+    width: 9rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #474f9f;
+    transition: background-color linear .1s;
+    border-radius: 7px;
+    cursor: pointer;
+    border: transparent;
+}
+#form-btn:hover{
+    background-color: #fd6b3f;
+}
+#service-txt{
+    font-size: clamp(1rem,5vw,2rem);
+    font-weight: bold;
+}
+.best-service{
+    text-align: center;
+    margin: 2rem 0;
+}
+.box{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.services{
+    width: 25rem;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.services>*{
+    margin: 10px 0;
+}
+.service-icon{
+    color: #fd6b3f;
+    font-size: 2rem;
+}
+.services div{
+    font-size: 1.1rem;
+}
+@media (max-width: 45rem) {
+    .home {
+       flex-direction: column;
+        margin: 2rem 0;
+    }
+    .home img {
+        width: 85%;
+        min-width: 18rem;
+    }
+    .home-top h1 {
+        font-size: clamp(1.5rem,7vw,2.5rem);
+    }
+    .home-top div{
+        max-width: 35rem;
+        text-align: center;
+    }
+    .box{
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        max-width: 30rem;
+        text-align: left;
+        margin: auto;
+    }
+    .services{
+        display: flex;
+        width: auto;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .services div{
+        font-size: clamp(.9rem,3vw,1.1rem);
+    }
+    .info{
+        margin:3rem auto;
+    }
+    .info form{
+        justify-content: center;
+    }
+}

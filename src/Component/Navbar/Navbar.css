@@ -1,0 +1,139 @@
+.navbar {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    gap: 1rem;
+}
+
+.navbar-bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 20%;
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+
+.navbar-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.navbar-txt div {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-txt div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    border-radius: 10px;
+    height: 3px;
+    background: #fd8d4e;
+    transition: all ease-out .2s;
+}
+
+.navbar-txt div:hover::before {
+    width: 100%;
+}
+
+.display {
+    display: none;
+    font-size: 1.5rem;
+}
+
+.navbar-btn button {
+    width: 7rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+#sign-up {
+    margin-right: 1rem;
+    background: transparent;
+    border: transparent;
+}
+
+#sign-in {
+    color: white;
+    background-color: #474f9f;
+    border-radius: 7px;
+    border: transparent;
+    transition: background-color linear .1s;
+}
+
+#sign-in:hover {
+    background-color: #fd6b3f;
+}
+
+@media (max-width: 50rem) and (min-width: 45rem) {
+    .navbar {
+        width: 95%;
+    }
+}
+
+@media (max-width: 45rem) {
+    .navbar {
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .navbar-logo {
+        width: auto;
+    }
+
+    .navbar-txt {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .navbar-btn {
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .navbar-btn button {
+        width: 50%;
+        min-width: 16rem;
+    }
+
+    #sign-up {
+        margin-right: 0;
+        outline: #474f9f 1px solid;
+        border-radius: 7px;
+    }
+
+    .display {
+        display: inline;
+    }
+
+    .navbar-bottom {
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        max-height: 100%;
+        gap: 1rem;
+        z-index: 2;
+        background-color: white;
+        transition: ease-out transform 350ms;
+        inset: 0 0 0 100%;
+        justify-content: center;
+    }
+    .open {
+        transform: translateX(-100%);
+    }
+}
