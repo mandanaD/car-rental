@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/car-rental/static/css/main.6f1fc1f5.css",
+    "main.js": "/car-rental/static/js/main.e2da7b39.js",
+    "static/media/about.png": "/car-rental/static/media/about.d3442d352b4d99b8aa03.png",
+    "static/media/White_Mercedes_Benz.png": "/car-rental/static/media/White_Mercedes_Benz.8a7ed23d774a79f2b5d1.png",
+    "static/media/vw.png": "/car-rental/static/media/vw.13eca943557cf3c4c3f4.png",
+    "static/media/audi as1.png": "/car-rental/static/media/audi as1.fce72b0b180c89c996a7.png",
+    "static/media/2020-Honda-Pilot.png": "/car-rental/static/media/2020-Honda-Pilot.56f41698825821419560.png",
+    "static/media/camry.png": "/car-rental/static/media/camry.5b6a99b40587fe2126a5.png",
+    "static/media/bmw sedan.png": "/car-rental/static/media/bmw sedan.c6214af9abdebef99b0a.png",
+    "static/media/civic sedan.png": "/car-rental/static/media/civic sedan.9a1fe567104676a02500.png",
+    "static/media/google.png": "/car-rental/static/media/google.5f4aa93cec8cb9067643.png",
+    "index.html": "/car-rental/index.html",
+    "main.6f1fc1f5.css.map": "/car-rental/static/css/main.6f1fc1f5.css.map",
+    "main.e2da7b39.js.map": "/car-rental/static/js/main.e2da7b39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f1fc1f5.css",
+    "static/js/main.e2da7b39.js"
+  ]
+}
